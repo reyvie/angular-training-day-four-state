@@ -2,19 +2,13 @@ import { state } from "@angular/animations";
 import { Injectable } from "@angular/core";
 import { Action, Selector, State, StateContext } from "@ngxs/store";
 import { AuthService } from "../services/auth.service";
-import { LoginAuth, SetToken } from "./auth.actions";
-
-export class AuthStateModel {
-  auth: any;
-  token?: string;
-  logged?: boolean;
-}
+import { AuthStateModel, LoginAuth, SetToken } from "./auth.actions";
 
 @State<AuthStateModel>({
   name: 'auth',
   defaults: {
     auth: null,
-    token: '',
+    token: null,
     logged: false
   }
 })

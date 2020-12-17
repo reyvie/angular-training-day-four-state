@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class RequestService {
-  private apiEndpoint = 'https://stage-api-ubertickets.cloudstaff.com/v1';
+  private apiEndpoint = 'https://stage-api-ubertickets.cloudstaff.com/v1/';
 
   constructor(private httpClient: HttpClient) { }
 
